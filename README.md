@@ -12,7 +12,7 @@ Simulator supports the following operations:
    5. Log out
    6. Exit
 3. Exit
-<pre>
+</pre>
 
 Data is stored in SQLite database.
 
