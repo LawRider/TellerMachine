@@ -35,29 +35,6 @@ class TellerMachine:
         remainder = sum(temp_list) % 10
         return 10 - remainder if remainder != 0 else 0
 
-        """
-        # OLD VARIANT
-        temp_number = ''
-        temp_sum = 0
-        temp_index = 1
-        for i in self.card_number:
-            if temp_index % 2 != 0:
-                temp = int(i) * 2
-                if temp > 9:
-                    temp -= 9
-                temp_number += str(temp)
-            else:
-                temp_number += i
-            temp_index += 1
-        for i in temp_number:
-            temp_sum += int(i)
-        remainder = temp_sum % 10
-        if remainder != 0:
-            return str(10 - remainder)
-        else:
-            return 0
-        """
-
     @staticmethod
     def db_init():
         conn = sqlite3.connect('card.s3db')
